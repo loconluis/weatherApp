@@ -42,6 +42,25 @@ $(document).ready(function(){
 						flag=false;
 					}
 				});
+				switch (mainW) {
+					case "Rain":
+							console.log("aqi1");
+							$("#displayIcon").html('<i class="wi wi-rain"></i>');
+						break;
+					case "Clouds":
+							console.log("aqi2");
+							$("#displayIcon").html('<i class="wi wi-cloudy"></i>');
+						break;
+					case "Clear":
+							console.log("aqi3");
+							$("#displayIcon").html('<i class="wi wi-day-windy"></i>');
+						break;
+					default:
+							console.log("aqi4");
+							$("#displayIcon").html('<i class="wi wi-day-sunny"></i>');
+				}
+
+
 			});
 		});
 	}
